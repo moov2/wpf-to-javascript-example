@@ -1,0 +1,51 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    function PostSaveData(){
+        
+    var data = {
+            "glossary": {
+                "title": "example glossary",
+                "GlossDiv": {
+                    "title": "S",
+                    "GlossList": {
+                        "GlossEntry": {
+                            "ID": "SGML",
+                            "SortAs": "SGML",
+                            "GlossTerm": "Standard Generalized Markup Language",
+                            "Acronym": "SGML",
+                            "Abbrev": "ISO 8879:1986",
+                            "GlossDef": {
+                                "para": "A meta-markup language, used to create markup languages such as DocBook.",
+                                "GlossSeeAlso": ["GML", "XML"]
+                            },
+                            "GlossSee": "markup"
+                        }
+                    }
+                }
+            }
+        };
+        window.external.SaveData(JSON.stringify(data));
+    }
+    
+    function LoadSavedData(){
+        
+        var data = JSON.parse(window.external.LoadData());
+        
+        alert(JSON.stringify(data));
+        
+        
+    }
+    
+    window.onload = PostSaveData;
+    window.onload = LoadSavedData;
+</script>
+</body>
+</html>

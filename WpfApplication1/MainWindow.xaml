@@ -1,0 +1,13 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="468.367" Width="698.178">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <WebBrowser x:Name="wbMain" HorizontalAlignment="Left" Height="427" VerticalAlignment="Top" Width="680" Source="C:\index.html"/>
+        <!--Set this path to where your file is. An example is included with the project-->
+
+    </Grid>
+</Window>
